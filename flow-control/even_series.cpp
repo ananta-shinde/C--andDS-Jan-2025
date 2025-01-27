@@ -2,12 +2,17 @@
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
-    int n = 50;
-    while(n<=500){
-        if(n%2 != 0){
-            printf("%d\t",n);
+    int lower;
+    int upper;
+   printf("Enter lower limit :");
+   scanf("%d",&lower);
+   printf("Enter upper limit :");
+   scanf("%d",&upper);
+    while(lower<=upper){
+        if(lower%2 != 0){
+            printf("%d\t",lower);
         }
-        n++;
+        lower++;
     }
     
     return 0;

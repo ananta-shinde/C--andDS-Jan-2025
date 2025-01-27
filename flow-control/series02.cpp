@@ -7,7 +7,5 @@ int main(int argc, char const *argv[])
         printf("%d\t",num);
         num = num +5;
     }
-    
-   
     return 0;
 }
