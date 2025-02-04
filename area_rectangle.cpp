@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     printf("Enter Height of Rectangle :");
     scanf("%f",&height);
 
-    result = width* height;
+    result = width * height;
 
     printf("Area of Rectangle is : %f",result);
 
