@@ -2,7 +2,6 @@
 int main(int argc, char const *argv[])
 {
     int nums[5]={12,23,56,45,55};
-    
     int marks[5];
     // marks = nums;
     for(int i=0;i<5;i++){
