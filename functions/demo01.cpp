@@ -1,25 +1,41 @@
 #include<stdio.h>
-
-int addNumbers(int n1,int n2){
-    int result;
-    result = n1+n2;
-   return result;
+#include<math.h>
+bool isEven(int n){
+    if(n%2 == 0){
+        return true;
+    }else{
+        return false;
+    }
 }
 
+float addition(float n1,float n2){
+    return n1+n2;
+}
+
+
+float calculateSimpleIntrest(float p,float r,float n){
+     return (p*r*n)/100;
+}
+float calculateCompundIntrest(float p,float r,float n){
+     return p*pow((1+(r/100)),n);
+}
+
+char getGrades(float marks){
+    if(marks < 50){
+       return 'F';
+    }else if(marks>=50 && marks<=60){
+        return 'B';
+    }else if(marks>60 && marks<=75){
+       return 'A';
+    }else{
+        return 'A';
+    }
+ 
+}
 int main(int argc, char const *argv[])
 {
-    int n1,n2,result;
-    printf("enter a number :");
-    scanf("%d",&n1);
-    printf("enter a number :");
-    scanf("%d",&n2);
-    result = addNumbers(n1,n2);
-    printf("%d",result);
-    result = addNumbers(20,100);
-     printf("%d",result);
-     printf("smaple message \n");
-     addNumbers(50,56);
-       
-   
+    float marks = 65.54;
+    char grade = getGrades(marks);
+    printf("%c",grade);
     return 0;
 }
