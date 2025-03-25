@@ -45,6 +45,5 @@ int main(int argc, char const *argv[])
     Rectangle r;
     Circle c;
     r.area();
-   
     return 0;
 }
