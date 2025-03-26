@@ -13,6 +13,5 @@ int main(int argc, char const *argv[])
     cout<< marks[i]<< endl;
    }
    
-
     return 0;
 }
